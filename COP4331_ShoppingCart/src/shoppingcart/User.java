@@ -7,7 +7,7 @@ package shoppingcart;
 
 /**
  * Interface that helps create new user types
- * @author Joshua Sohan
+ * @author Group 12
  */
 public interface User {
     
