@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 
 /**
  * Collection Type object that adapts a LinkedList, implements ProdList
- * @author Joshua Sohan
+ * @author Group 12
  */
 public class PDList<E> implements ProdList<E>, Iterable<E>, Serializable {
 
