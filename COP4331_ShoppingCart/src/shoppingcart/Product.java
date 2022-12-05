@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  * Default product type that, implements prod
- * @author Joshua Sohan
+ * @author Group 12
  */
 public class Product implements Prod, Serializable{
     
