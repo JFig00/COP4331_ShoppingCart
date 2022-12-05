@@ -7,7 +7,7 @@ package shoppingcart;
 
 /**
  *Product interface that helps create new product types
- * @author Joshua Sohan
+ * @author Group 12
  */
 public interface Prod {
     
