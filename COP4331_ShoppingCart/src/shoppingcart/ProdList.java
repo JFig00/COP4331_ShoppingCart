@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 
 /**
  * Interface to create a LinkedList adaptation
- * @author Joshua sohan
+ * @author Group 12
  */
 public interface ProdList<E> {
     
