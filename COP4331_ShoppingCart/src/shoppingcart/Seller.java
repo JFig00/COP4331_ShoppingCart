@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  * A User object type that implements User interface and is responsible for Seller account
- * @author Joshua Sohan
+ * @author Group 12
  */
 public class Seller implements User, Serializable{
     private final PDList<Product> prod;
