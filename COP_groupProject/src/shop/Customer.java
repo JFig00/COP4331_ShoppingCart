@@ -1,29 +1,30 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package shoppingcart;
-
+package shop;
 import java.io.Serializable;
 
 /**
  * A User object type that implements User interface and is responsible for
- * Seller account
+ * Customer account
  *
- * @author Johnny Figueroa, Joshua Gardner, Jordan Perrin
+ * @author Joshua Sohan
  */
-public class Seller implements User, Serializable {
+public class Customer implements User, Serializable {
 
-    private final ProductCollect<Product> prod;
+    private final PDList<Product> prod;
     private int arrayNum;
     private String username;
     private String name;
     private String password;
 
-    public Seller() {
-        arrayNum = 0;
-        prod = new ProductCollect();
+    /**
+     * Constructor class, intializes all vaulues to zero
+     */
+    public Customer() {
+        this.arrayNum = 0;
+        this.prod = new PDList();
     }
 
     /**
@@ -33,8 +34,8 @@ public class Seller implements User, Serializable {
      */
     @Override
     public void Add(Product val) {
-        prod.add(val);
-        arrayNum++;
+        this.prod.add(val);
+        this.arrayNum++;
     }
 
     /**
@@ -44,8 +45,8 @@ public class Seller implements User, Serializable {
      */
     @Override
     public void Remove(Product val) {
-        prod.remove(val);
-        arrayNum--;
+        this.prod.remove(val);
+        this.arrayNum--;
     }
 
     /**
@@ -64,8 +65,8 @@ public class Seller implements User, Serializable {
      * @return PDList of products
      */
     @Override
-    public ProductCollect<Product> ProdList() {
-        return (ProductCollect<Product>) prod;
+    public PDList<Product> ProdList() {
+        return (PDList<Product>) this.prod;
     }
 
     /**
@@ -75,7 +76,7 @@ public class Seller implements User, Serializable {
      */
     @Override
     public void SetName(String val) {
-        name = val;
+        this.name = val;
     }
 
     /**
@@ -85,8 +86,7 @@ public class Seller implements User, Serializable {
      */
     @Override
     public void SetPassword(String val) {
-        password = val;
-
+        this.password = val;
     }
 
     /**
@@ -96,7 +96,7 @@ public class Seller implements User, Serializable {
      */
     @Override
     public void SetUsername(String val) {
-        username = val;
+        this.username = val;
     }
 
     /**
@@ -107,7 +107,7 @@ public class Seller implements User, Serializable {
     @Override
     public String GetName() {
 
-        return name;
+        return this.name;
     }
 
     /**
@@ -117,7 +117,7 @@ public class Seller implements User, Serializable {
      */
     @Override
     public String GetPassword() {
-        return password;
+        return this.password;
     }
 
     /**
@@ -127,6 +127,6 @@ public class Seller implements User, Serializable {
      */
     @Override
     public String GetUsername() {
-        return username;
+        return this.username;
     }
 }

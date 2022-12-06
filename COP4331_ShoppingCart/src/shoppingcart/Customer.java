@@ -8,27 +8,30 @@ package shoppingcart;
 import java.io.Serializable;
 
 /**
- * A User object type that implements User interface  and is responsible for Customer account
- * @author Joshua Sohan
+ * A User object type that implements User interface and is responsible for
+ * Customer account
+ *
+ * @author Johnny Figueroa, Joshua Gardner, Jordan Perrin
  */
-public class Customer implements User, Serializable{
-    private final PDList<Product> prod;
+public class Customer implements User, Serializable {
+
+    private final ProductCollect<Product> prod;
     private int arrayNum;
     private String username;
     private String name;
     private String password;
-    
-    
+
     /**
      * Constructor class, intializes all vaulues to zero
      */
-    public Customer(){
+    public Customer() {
         this.arrayNum = 0;
-        this.prod = new PDList();
+        this.prod = new ProductCollect();
     }
 
     /**
      * Add prodcut to product
+     *
      * @param val Prodcut you want to add
      */
     @Override
@@ -39,6 +42,7 @@ public class Customer implements User, Serializable{
 
     /**
      * Remove Product
+     *
      * @param val Product you wish to remove
      */
     @Override
@@ -49,33 +53,37 @@ public class Customer implements User, Serializable{
 
     /**
      * returns the number of total products
+     *
      * @return int of total products
      */
     @Override
     public int num() {
         return arrayNum;
-    }    
+    }
 
     /**
      * returns the list of of products
+     *
      * @return PDList of products
      */
     @Override
-    public PDList<Product> ProdList() {
-        return (PDList<Product>) this.prod;
+    public ProductCollect<Product> ProdList() {
+        return (ProductCollect<Product>) this.prod;
     }
 
     /**
      * Sets name
+     *
      * @param val String to set name too
      */
     @Override
     public void SetName(String val) {
         this.name = val;
     }
-    
+
     /**
      * Sets password
+     *
      * @param val String to set password to
      */
     @Override
@@ -85,6 +93,7 @@ public class Customer implements User, Serializable{
 
     /**
      * Sets Username
+     *
      * @param val String to set username too
      */
     @Override
@@ -94,17 +103,18 @@ public class Customer implements User, Serializable{
 
     /**
      * Gets name
+     *
      * @return String of name
      */
     @Override
     public String GetName() {
-        
+
         return this.name;
     }
 
-    
     /**
      * Gets password
+     *
      * @return String of password
      */
     @Override
@@ -112,9 +122,9 @@ public class Customer implements User, Serializable{
         return this.password;
     }
 
-    
     /**
      * Gets Usename
+     *
      * @return String of username
      */
     @Override
@@ -122,5 +132,3 @@ public class Customer implements User, Serializable{
         return this.username;
     }
 }
-    
-

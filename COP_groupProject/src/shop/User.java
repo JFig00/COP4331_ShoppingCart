@@ -1,14 +1,13 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package shoppingcart;
+package shop;
 
 /**
  * Interface that helps create new user types
  *
- * @author Johnny Figueroa, Joshua Gardner, Jordan Perrin
+ * @author Joshua Sohan
  */
 public interface User {
 
@@ -16,7 +15,7 @@ public interface User {
 
     void Remove(Product val);
 
-    ProductCollect<Product> ProdList();
+    PDList<Product> ProdList();
 
     int num();
 

@@ -1,23 +1,22 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package shoppingcart;
+package shop;
 
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.LinkedList;
-import javax.swing.JPanel;
 
 /**
  * Collection Type object that adapts a LinkedList, implements ProdList
  * @author Joshua Sohan
+ * @param <E>
  */
 public class PDList<E> implements ProdList<E>, Iterable<E>, Serializable {
 
-    private LinkedList<E> lst;
+    private final LinkedList<E> lst;
 
     /**
      * Class constructor

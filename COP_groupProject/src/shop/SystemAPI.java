@@ -1,7 +1,8 @@
-/**
- * System API, each class controls a pages UI
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package shoppingcart;
+package shop;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
@@ -946,23 +947,23 @@ public class SystemAPI {
                 if (flag1 == 0) {
                     //update inventory
                     Product newP = new Product();
-
+                    
                     newP.SetPrice(value);
                     price.setText(null);
-
+                    
                     //update Price
                     newP.SetInventory(inv);
                     inventory.setText(null);
-
+                    
                     //update name
                     newP.SetName(name.getText());
                     name.setText(null);
-
+                    
                     //update description
                     newP.SetDescription(description.getText());
                     description.setText(null);
                     scurrent.ProdList().add(newP);
-
+                    
                     //refresh screem
                     card1.removeAll();
                     SellerAPI();

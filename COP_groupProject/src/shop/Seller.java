@@ -1,9 +1,8 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package shoppingcart;
+package shop;
 
 import java.io.Serializable;
 
@@ -11,11 +10,11 @@ import java.io.Serializable;
  * A User object type that implements User interface and is responsible for
  * Seller account
  *
- * @author Johnny Figueroa, Joshua Gardner, Jordan Perrin
+ * @author Joshua Sohan
  */
 public class Seller implements User, Serializable {
 
-    private final ProductCollect<Product> prod;
+    private final PDList<Product> prod;
     private int arrayNum;
     private String username;
     private String name;
@@ -23,7 +22,7 @@ public class Seller implements User, Serializable {
 
     public Seller() {
         arrayNum = 0;
-        prod = new ProductCollect();
+        prod = new PDList();
     }
 
     /**
@@ -64,8 +63,8 @@ public class Seller implements User, Serializable {
      * @return PDList of products
      */
     @Override
-    public ProductCollect<Product> ProdList() {
-        return (ProductCollect<Product>) prod;
+    public PDList<Product> ProdList() {
+        return (PDList<Product>) prod;
     }
 
     /**

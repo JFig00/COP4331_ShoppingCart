@@ -1,17 +1,17 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package shoppingcart;
+package shop;
 
 import java.awt.*;
-import javax.swing.*;
+import javax.swing.JScrollPane;
+import javax.swing.SwingUtilities;
 
 /**
  * FlowLayout subclass that fully supports wrapping of components.
  *
- * @author Johnny Figueroa, Joshua Gardner, Jordan Perrin
+ * @author Layout editor from internet
  */
 public class WrapLayout extends FlowLayout {
 

@@ -6,19 +6,26 @@
 package shoppingcart;
 
 import java.util.Collection;
-import javax.swing.JPanel;
 
 /**
  * Interface to create a LinkedList adaptation
- * @author Joshua sohan
+ *
+ * @author Johnny Figueroa, Joshua Gardner, Jordan Perrin
+ * @param <E>
  */
-public interface ProdList<E> {
-    
-    void  add(E e);
+public interface ProductListBase<E> {
+
+    void add(E e);
+
     void remove(E e);
+
     E getItem(int i);
+
     int size();
+
     boolean isEmpty();
+
     void removeAll();
-    void addAll(Collection <? extends E> c);
+
+    void addAll(Collection<? extends E> c);
 }
