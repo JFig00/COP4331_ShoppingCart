@@ -8,7 +8,7 @@ package shoppingcart;
 /**
  * Product interface that helps create new product types
  *
- * @author Johnny Figueroa, Joshua Gardner, Jordan Perrin
+ * @author Group 12
  */
 public interface ProductBase {
 

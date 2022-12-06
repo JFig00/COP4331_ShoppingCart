@@ -7,8 +7,7 @@ package shoppingcart;
 
 /**
  * Interface that helps create new user types
- *
- * @author Johnny Figueroa, Joshua Gardner, Jordan Perrin
+ * @author Group 12
  */
 public interface User {
 

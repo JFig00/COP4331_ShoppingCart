@@ -8,10 +8,8 @@ package shoppingcart;
 import java.io.Serializable;
 
 /**
- * A User object type that implements User interface and is responsible for
- * Seller account
- *
- * @author Johnny Figueroa, Joshua Gardner, Jordan Perrin
+ * A User object type that implements User interface and is responsible for Seller account
+ * @author Group 12
  */
 public class Seller implements User, Serializable {
 

@@ -41,7 +41,7 @@ import javax.swing.ScrollPaneConstants;
 /**
  * System API, each class controls a pages UI
  *
- * @author Joshua Sohan
+ * @author Group 12
  */
 public class SystemAPI {
 

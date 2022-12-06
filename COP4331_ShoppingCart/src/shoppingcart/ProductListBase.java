@@ -9,9 +9,7 @@ import java.util.Collection;
 
 /**
  * Interface to create a LinkedList adaptation
- *
- * @author Johnny Figueroa, Joshua Gardner, Jordan Perrin
- * @param <E>
+ * @author Group 12
  */
 public interface ProductListBase<E> {
 
