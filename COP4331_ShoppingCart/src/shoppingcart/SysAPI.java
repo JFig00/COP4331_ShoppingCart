@@ -12,7 +12,7 @@ import java.text.*;
 /**
  * System API for Shopping Cart
  *
- * @author Johnny Figueroa, Joshua Gardner, Jordan Perrin
+ * @author Group 12
  */
 public class SysAPI {
 

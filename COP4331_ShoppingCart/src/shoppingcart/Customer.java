@@ -11,7 +11,7 @@ import java.io.Serializable;
  * A User object type that implements User interface and is responsible for
  * Customer account
  *
- * @author Johnny Figueroa, Joshua Gardner, Jordan Perrin
+ * @author Group 12
  */
 public class Customer implements User, Serializable {
 
@@ -22,7 +22,7 @@ public class Customer implements User, Serializable {
     private String password;
 
     /**
-     * Constructor class, intializes all vaulues to zero
+     * Constructor class, initialize all values to zero
      */
     public Customer() {
         this.arrayNum = 0;
@@ -30,9 +30,9 @@ public class Customer implements User, Serializable {
     }
 
     /**
-     * Add prodcut to product
+     * Add product to product
      *
-     * @param val Prodcut you want to add
+     * @param val product you want to add
      */
     @Override
     public void Add(Product val) {
@@ -102,7 +102,7 @@ public class Customer implements User, Serializable {
     }
 
     /**
-     * Gets name
+     * Gets name of product
      *
      * @return String of name
      */
@@ -113,7 +113,7 @@ public class Customer implements User, Serializable {
     }
 
     /**
-     * Gets password
+     * Gets password of user
      *
      * @return String of password
      */
@@ -123,7 +123,7 @@ public class Customer implements User, Serializable {
     }
 
     /**
-     * Gets Usename
+     * Gets Username of user
      *
      * @return String of username
      */

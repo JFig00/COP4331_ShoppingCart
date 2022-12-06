@@ -9,7 +9,9 @@ import java.util.Collection;
 
 /**
  * Interface to create a LinkedList adaptation
+ * 
  * @author Group 12
+ * @param <E>
  */
 public interface ProductListBase<E> {
 

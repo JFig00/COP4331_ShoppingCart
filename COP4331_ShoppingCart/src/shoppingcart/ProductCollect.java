@@ -10,7 +10,8 @@ import java.util.*;
 
 /**
  * Collection Type object that adapts a LinkedList, implements ProdList
- * @author Johnny Figueroa, Joshua Gardner, Jordan Perrin
+ * 
+ * @author Group 12
  * @param <E>
  */
 public class ProductCollect<E> implements ProductListBase<E>, Iterable<E>, Serializable {

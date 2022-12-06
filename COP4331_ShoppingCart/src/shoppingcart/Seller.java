@@ -25,9 +25,9 @@ public class Seller implements User, Serializable {
     }
 
     /**
-     * Add prodcut to product
+     * Add product to product list
      *
-     * @param val Prodcut you want to add
+     * @param val product you want to add
      */
     @Override
     public void Add(Product val) {

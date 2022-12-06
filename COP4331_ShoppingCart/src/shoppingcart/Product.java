@@ -100,7 +100,7 @@ public class Product implements ProductBase, Serializable {
     /**
      * Gets inventory
      *
-     * @return int of the items inventory
+     * @return int of the item inventory
      */
     @Override
     public int GetInventory() {
@@ -110,7 +110,7 @@ public class Product implements ProductBase, Serializable {
     /**
      * returns copy of the product
      *
-     * @return Prodcut type that is a copy of itself
+     * @return Product type that is a copy of itself
      */
     public Product Getcopy() {
         Product n = new Product();
